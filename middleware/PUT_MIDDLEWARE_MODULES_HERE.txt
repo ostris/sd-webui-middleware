@@ -1,0 +1,1 @@
+Everything except the __init__.py, MiddlewareBase, and ExampleMiddleware is git ignored. All folders will have their init file checked for MIDDLEWARE_MODULES
