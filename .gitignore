@@ -158,3 +158,4 @@ middleware/*
 !middleware/MiddlewareBase.py
 !middleware/ExampleMiddleware
 !middleware/PUT_MIDDLEWARE_MODULES_HERE.txt
+/storage

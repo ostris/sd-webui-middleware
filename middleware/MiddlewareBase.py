@@ -12,11 +12,17 @@ if TYPE_CHECKING:
 class MiddlewareBase:
     name = "Base Middleware"
     uid = "base_middleware"
+    description = "Base Middleware"
 
     extension_root = EXTENSION_ROOT
 
     def __init__(self, *args, **kwargs):
         pass
+
+    @classmethod
+    def get_default_config(cls) -> dict:
+        # override in child class
+        return {}
 
     def run(self, p: 'StableDiffusionProcessing') -> 'Processed':
         # Extend this in child class
